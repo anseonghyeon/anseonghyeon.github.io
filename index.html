@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Seonghyeon-An</title>
         <style>
             .profile-picture {
@@ -15,25 +17,49 @@
                 font-family: monospace;
                 
             }
+            .main-wrapper {
+                height: 500px;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: black;
+            }
+            .aside {
+                float: left;
+            }
+            .section {
+                float: left;
+            }
             
         </style>
     </head>
     <body>
+
         <header>
-            <h1>안성현</h1>
+            <h1>&lt;안&nbsp;성현&gt;&lt;/안&nbsp;성현&gt;</h1>
         </header>
         <hr>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>PROJECT</li>
-                <li>ETC</li>
-                <li>ETC</li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="project.html">PROJECT</a></li>
+                <li><a href="table.html">TABLE</a></li>
+                <li><a href="etc2.html">ETC2</a></li>
             </ul>
         </nav>
-        <aside>
-            <img src="img/my.jpeg" class="profile-picture">
-            <div class="profile-name">Seonghyeon An</div>
-        </aside>
+        <div class="main-wrapper">
+            <aside class="aside">
+                <img src="img/my.jpeg" class="profile-picture">
+                <div class="profile-name">Seonghyeon An</div>
+                <div>경상북도 울진군</div>
+                <div>anseonghyeon@gmail.com</div>
+                <div><a href="https://velog.io/@anseonghyeon">https://velog.io/@anseonghyeon</a></div>
+            </aside>
+            <section class="section">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nihil harum porro dolores quos ex tempore dignissimos. Sapiente suscipit, dignissimos eum natus, mollitia doloremque, nobis voluptatibus at aspernatur ducimus aliquid.</p>
+            </section>
+        </div>
+        
+        <hr>
+        <footer>010-0000-0000</footer>
     </body>
 </html>
