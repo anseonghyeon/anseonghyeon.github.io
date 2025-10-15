@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="img/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>안성현의 포트폴리오</title>
+        <link href="./style/index.css">
+        <style>
+            .profile-picture {
+                width: 300px;
+                height: 300px;
+                border-radius: 150px;
+            }
+            .profile-name {
+                font-size: 25px;
+                font-weight: bold;
+                font-style: italic;
+                font-family: monospace;
+                
+            }
+            .main-wrapper {
+                width: 1500px;
+                margin: 0 auto;
+                overflow: hidden;
+                /* height: 500px; */
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+            }
+            .aside {
+                width: 300px;
+                float: left;
+                /* border-style: dashed; */
+                
+                /* border-width: 2px;
+                border-color: black; */
+                padding: 20px;
+            }
+            .section {
+                width: 1100px;
+                float: left;
+                border-left-style: solid;
+                border-left-width: 2px;
+                border-left-color: black;
+                padding: 20px;
+            }
+            .audio-ncs {
+                height: 100px;
+            }
+            .location-img ,.email-img ,.link-img{
+                width: 20px;
+                height: 20px;
+            }
+            body {
+                /* background: grey; */
+                background: #ff0090;
+            }
+            .footer-txt {
+                text-align: center;
+            }
+            hr {
+                /* background: black; */
+                background: #00a3d2;
+                height: 20px;
+                border: 3px black solid;
+            }
+            
+            * {
+                /* color: #00a3d2; */
+                color: black;
+                background: gray;
+            }
+            .ul-nav {
+                overflow: hidden;
+                background: #ff0090;
+                text-align: center;
+            }
+            .li-nav {
+                list-style:none;
+                float: left;
+                padding: 15px;
+                width: 14%;
+                border: 3px black solid;
+            }
+            .li-nav:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+            .li-nav:last-child {
+                border-radius: 0 10px 10px 0;
+            }
+            .li-nav:nth-child(2n) {
+                background-color: #00a3d2;
+            }
+            .li-nav:nth-child(2n+1) {
+                background-color: #ff0090;
+            }
+            a {
+                text-decoration: none;
+            }
+            .title-h1 {
+                text-align: center;
+            }
+            .dark-btn {
+                width: 100px;
+                height: 30px;
+                background: #00a3d2;
+                text-align: center;
+                border-radius: 60%;
+            }
+            #body {
+                background-color: white;
+            }
+        </style>
+        <script src="src/color.js">
+            
+        </script>
+    </head>
+    <body id="body">
+        <div class="dark-btn" onclick="changeColor()">다크모드</div>
+        <audio class="audio-ncs" src="Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3 "  autoplay="autoplay" loop="loop">
+        </audio>
+        <header>
+            <h1 class="title-h1">&lt;h1&gt;안성현의 포트폴리오&lt;/h1&gt;</h1>
+
+        </header>
+        <hr>
+        <!-- 3-2에서 배운 리스트로 내비게이션 메뉴 사용 -->
+        <nav> 
+            <ul class="ul-nav">
+                <li class="li-nav"><a href="index.html">HOME</a></li>
+                <li class="li-nav"><a href="lcd_control.html">LCD-CONTROL</a></li>
+                <li class="li-nav"><a href="lol_autopicker.html">LOL-AUTOPICKER</a></li>
+                <li class="li-nav"><a href="goon_date.html">GOON-DATE</a></li>
+                <li class="li-nav"><a href="your_name.html">YOUR-NAME</a></li>
+                <li class="li-nav"><a href="instar_bot.html">INSTAR-BOT</a></li>
+            </ul>
+        </nav>
+        <div class="main-wrapper" id="main-wrapper">
+            <aside class="aside">
+                <img src="img/IMG_0085.jpg" class="profile-picture" alt="안성현">
+                <div class="profile-name">Seonghyeon An</div>
+                <div class="location-wrapper">
+                    <img src="img/location.png" class="location-img"><span>경상북도 울진군</span>
+                </div>
+                <div class="email-wrapper">
+                    <img src="img/email.png" class="email-img"><span>anseonghyeon@gmail.com</span>
+                </div>
+                <div class="link-wrapper">
+                    <img src="img/link.png" class="link-img"><span><a href="https://velog.io/@anseonghyeon">https://velog.io/@anseonghyeon</a></span>
+                </div>
+                
+            </aside>
+            <section class="section">
+                <p><b>아래의 약력은 chatgpt로 작성된 가상의 약력 입니다!</b></p>
+                <p>이름: 성현</p>
+                <p>생년월일: 2000년 x월 x일</p>
+                <p>최종 학력: 고등학교 졸업 (20XX년)</p>
+                <p>전공: 컴퓨터 공학</p>
+                <p>경력:</p>
+                <p>1. ABC 소프트웨어 개발 (20XX년 - 20XX년)</p>
+                <p>웹 애플리케이션 개발 및 유지보수</p>
+                <p>프론트엔드 기술 (HTML, CSS, JavaScript)을 활용한 사용자 인터페이스 개발</p>
+                <p>백엔드 기술 (Python, Django, MySQL)을 활용한 데이터 처리 및 서버 개발</p>
+                <p>2. DEF 테크놀로지 (20XX년 - 현재)</p>
+                <p>대규모 프로젝트에 참여하여 팀원들과의 협업 경험</p>
+                <p>프론트엔드와 백엔드 개발 역할 수행</p>
+                <p>프로젝트 기획, 설계, 구현 및 테스트 단계 참여</p>
+                <p>자격 및 기술:</p>
+                <p>프로그래밍 언어: Python, Java, C++</p>
+                <p>웹 기술: HTML, CSS, JavaScript, Django</p>
+                <p>데이터베이스: MySQL, PostgreSQL</p>
+                <p>버전 관리: Git</p>
+            </section>
+
+        </div>
+        
+        <hr>
+        <footer class="footer-txt"><b>Copyright 2023.anseonghyeon.All rights reserved.</b></footer>
+    </body>
+</html>
