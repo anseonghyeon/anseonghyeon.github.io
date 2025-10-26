@@ -3,71 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>안성현의 포트폴리오 | 공사중</title>
-    <link rel="icon" href="img/favicon.png" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: "Pretendard", "Noto Sans KR", sans-serif;
-        background: linear-gradient(135deg, #121212, #121212);
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-      }
-
-      /* .spinner {
-        width: 60px;
-        height: 60px;
-        border: 6px solid rgba(255, 255, 255, 0.3);
-        border-top-color: white;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      } */
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      footer {
-        position: absolute;
-        bottom: 20px;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.8);
-      }
-    </style>
+    <meta name="author" content="Seonghyeon An" />
+    <meta name="description" content="프론트엔드 개발자 안성현의 포트폴리오." />
+    <meta
+      name="keywords"
+      content="Seonghyeon An, 안성현, 프론트엔드, 포트폴리오, Frontend Developer, React, TypeScript, Portfolio, PullIt"
+    />
+    <meta
+      property="og:title"
+      content="안성현의 포트폴리오 | Seonghyeon An Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="프론트엔드 개발자 안성현의 포트폴리오."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anseonghyeon.github.io/" />
+    <meta
+      property="og:image"
+      content="https://anseonghyeon.github.io/assets/images/profile.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="안성현의 포트폴리오 | Seonghyeon An" />
+    <meta
+      name="twitter:description"
+      content="프론트엔드 개발자 안성현의 포트폴리오."
+    />
+    <meta
+      name="twitter:image"
+      content="https://anseonghyeon.github.io/assets/images/profile.png"
+    />
+    <title>안성현의 포트폴리오</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/layout.css" />
+    <link rel="stylesheet" href="./style/index.css" />
   </head>
-  <body>
-    <!-- <div class="spinner"></div> -->
-    <lottie-player
-      src="https://assets2.lottiefiles.com/packages/lf20_qp1q7mct.json"
-      background="transparent"
-      speed="1"
-      style="width: 350px; height: 350px"
-      loop
-      autoplay
-    ></lottie-player>
 
-    <h1>🚧 현재 페이지는 공사 중입니다 🚧</h1>
-    <p>새로운 포트폴리오 페이지를 준비 중이에요.<br />조금만 기다려주세요!</p>
-    <footer>© 2025 Seonghyeon An | anseonghyeon.github.io</footer>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <div class="nav-container">
+          <h1 class="logo">Seonghyeon</h1>
+          <button class="menu-btn" id="menu-btn">☰</button>
+          <nav id="navbar">
+            <ul class="nav-item-wrapper">
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#skill">Skill</a></li>
+              <li class="nav-item"><a href="#project">Project</a></li>
+              <li class="nav-item"><a href="#education">Education</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2 class="section-name">About</h2>
+          <div class="profile">
+            <div class="profile-image"></div>
+            <h3 class="profile-name">안 성 현</h3>
+          </div>
+          <p class="profile-description">
+            새로운 기술을 배우고, 팀과 함께 성장하는 것을 즐기는
+            <br />프론트엔드 개발자 안성현 입니다!
+          </p>
+          <div class="email-box">
+            <h3>Email</h3>
+            <p>anseonghyeon@gmail.com</p>
+          </div>
+          <div class="github-box">
+            <h3>Github</h3>
+            <p>
+              <a href="https://github.com/anseonghyeon" style="color: #175676;"
+                >https://github.com/anseonghyeon</a
+              >
+            </p>
+          </div>
+        </section>
+        <section id="skill">
+          <h2 class="section-name">Skill</h2>
+          <div class="language-box">
+            <h3>Language</h3>
+            <p>- HTML, CSS, JavaScript, C, Java</p>
+          </div>
+          <div class="framework-box">
+            <h3>Framework / Library</h3>
+            <p>- React</p>
+          </div>
+          <div class="tool-box">
+            <h3>Tool</h3>
+            <p>- Git, AWS</p>
+          </div>
+        </section>
+        <section id="projects">
+          <h2 class="section-name">Projects</h2>
+          <div class="pullit-box">
+            <h3>Pullit (2025.08.11 ~ 2025.11.07) <a href="https://github.com/kakao-tech-campus-3rd-step3/Team2_FE" style="color: #175676;">[프로젝트 링크]</a></h3>
+            <ul>
+              <li>
+                - vite기반 리액트 프로젝트를 세팅하고 필요한 라이브러리 설치 및 github action 세팅
+              </li>
+              <li>
+                - AirBnB 컨벤션으로 eslint, prettier 세팅 및 디자인 토큰, husky 적용
+              </li>
+              <li>
+                - 전체적인 프로젝트 레이아웃과 사이드바를 만들고 react-router로 라우팅 세팅
+              </li>
+              <li>- 문제풀이 페이지 작성</li>
+              <li>- sse를 사용해서 토스트 메시지 기능 구현</li>
+              <li>- Lottie를 사용해서 NotFound 페이지 작성</li>
+              <li>- 오답노트 페이지 구현</li>
+              <li>- 대시보드 페이지 구현</li>
+            </ul>
+          </div>
+          <div class="naftel-box">
+            <h3>naftel - 영화 검색 사이트(2025.6) <a href="https://github.com/anseonghyeon/naftel" style="color: #175676;">[프로젝트 링크]</a></h3>
+            <ul>
+              <li>
+                - fetch로 TMDB API 요청
+              </li>
+              <li>
+                - 영화 포스터, 제목, 평점, 요약등의 정보를 포함하는 UI 작성
+              </li>
+              <li>
+                - 유저가 입력한 검색어와 관련된 영화만 필터링 기능 구현 
+              </li>
+              <li>- 각 영화 카드를 클릭했을때, 해당 영화의 ID로 TMDB API에서 상세 정보를 받아와 화면에 표시해주는 모달 구현</li>
+            </ul>
+          </div>
+          <div class="geometric-box">
+            <h3>흰눈사이로 - RPG게임(2013.12) <a href="https://github.com/anseonghyeon/snow-village" style="color: #175676;">[프로젝트 링크]</a></h3>
+            <ul>
+              <li>
+                - GameMaker 8.0으로 만듬
+              </li>
+              <li>
+                - GML 사용
+              </li>
+              <li>
+                - CGM 카페 제3회 게임잼 출품작
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="education">
+          <h2 class="section-name">Education</h2>
+          <div class="du-box">
+            <h3>대구대학교 컴퓨터공학과 (2019.03 ~ 2023.02)</h3>
+            <p>- 4학기 학점 4.2 / 4.5</p>
+          </div>
+          <div class="knu-box">
+            <h3>강원대학교 컴퓨터공학과 (2023.03 ~ )</h3>
+            <p>- 4학기 학점 3.9 / 4.5</p>
+          </div>
+          <div class="kakao-tect-campus-box">
+            <h3>카카오테크캠퍼스 3기(2025.04 ~ 2025.11.10)</h3>
+            <p>- 프론트엔드 과정</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-icons">
+          <a
+            href="mailto:anseonghyeon@gmail.com"
+            class="footer-link"
+            aria-label="Send email"
+          >
+            <i data-lucide="mail" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/anseonghyeon"
+            class="footer-link"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i data-lucide="github" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p>© Seonghyeon An. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navbar = document.getElementById("navbar");
+      if (menuBtn) {
+        menuBtn.addEventListener("click", () => {
+          if (navbar) navbar.classList.toggle("active");
+        });
+      }
+    </script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
