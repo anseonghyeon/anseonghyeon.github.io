@@ -182,3 +182,11 @@ footer {
   width: 18px;
   height: 18px;
 }
+
+/* Print styles - hide header and footer */
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+}
